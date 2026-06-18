@@ -1,51 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TM Digital</title>
-
 <style>
-body{
+
+*{
     margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
     height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     background:#f7f7f5;
-    font-family:Arial,sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .container{
     text-align:center;
 }
 
-    .logo{
-    width:2000px;
-    max-width:95vw;
+.logo{
+    width:1000px;
+    max-width:90vw;
+    display:block;
+    margin:0 auto;
 }
 
-h1{
-    font-size:70px;
-    letter-spacing:15px;
+.tagline{
+    margin-top:30px;
+    font-size:28px;
     font-weight:300;
-    margin-bottom:30px;
-}
-
-p{
-    font-size:24px;
     letter-spacing:8px;
+    color:#111;
 }
+
+.enter-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:18px 70px;
+    background:#000;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    letter-spacing:8px;
+    font-size:15px;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.enter-btn:hover{
+    transform:translateY(-3px);
+}
+
+@media (max-width:768px){
+
+    .logo{
+        width:95vw;
+    }
+
+    .tagline{
+        font-size:18px;
+        letter-spacing:4px;
+    }
+
+    .enter-btn{
+        padding:15px 45px;
+    }
+
+}
+
 </style>
-
 </head>
-
 <body>
-
 <div class="container">
+<img src="tm%20digital.PNG" alt="TM Digital Logo" class="logo">
 
-    <img src="tm%20digital.PNG" alt="TM Digital Logo" class="logo">
+<p class="tagline">Built to stand out.</p>
 
-    
+<a href="#" class="enter-btn">ENTER</a>
 </div>
-
 </body>
 </html>
